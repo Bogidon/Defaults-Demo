@@ -71,8 +71,6 @@
                     </view>
                     <connections>
                         <outlet property="appTitle" destination="dju-RA-IZM" id="hCp-mx-NWO"/>
-                        <outlet property="visitPhilly" destination="noj-hS-Ref" id="RjG-Gl-M0b"/>
-                        <outlet property="visitSite" destination="vwD-j9-zeX" id="uIV-th-rZo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
