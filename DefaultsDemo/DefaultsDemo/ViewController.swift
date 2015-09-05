@@ -18,10 +18,19 @@ class ViewController: UIViewController {
     {
         super.viewDidLoad()
         
-        // Kerning via extension
+        // Kerning via extension (AppLogic)
         appTitle.kern(14)
         visitSiteButton.kern(2)
         builtAtPennAppsButton.kern(2)
+        
+        // Coloring part of visitSiteButton string
+        let visitSiteText = visitSiteButton.titleLabel?.text
+        let ourSite = "our site"
+        let rangeOfSiteButton = (visitSiteText! as NSString).rangeOfString(ourSite)
+        let attributedString = NSMutableAttributedString(string: visitSiteText!, attributes: [NSFontAttributeName : UIFont.systemFontOfSize(14)])
+        
+        attributedString.setAttributes([NSFontAttributeName : UIFont.systemFontOfSize(20), NSForegroundColorAttributeName : UIColor(rgba: "#50E3C2").CGColor], range: rangeOfSiteButton)
+        // visitSiteButton.titleLabel?.attributedText = attributedString
     }
     
     @IBAction func contactUs(sender: UIButton)
