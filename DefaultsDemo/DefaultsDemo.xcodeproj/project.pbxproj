@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		434A8DB01B9AC0E800692569 /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DBEF831B9ABC1C00BC8C3D /* DefaultsSDK.framework */; };
-		434A8DB11B9AC0E800692569 /* DefaultsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43DBEF831B9ABC1C00BC8C3D /* DefaultsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		43DBEF841B9ABC1C00BC8C3D /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DBEF831B9ABC1C00BC8C3D /* DefaultsSDK.framework */; };
+		43CCD8941B9ACE2A00090D13 /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CCD8931B9ACE2A00090D13 /* DefaultsSDK.framework */; };
+		43CCD8951B9ACE3300090D13 /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CCD8931B9ACE2A00090D13 /* DefaultsSDK.framework */; };
+		43CCD8961B9ACE3300090D13 /* DefaultsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43CCD8931B9ACE2A00090D13 /* DefaultsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3A3015F1B9AB0500055A19C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A3015E1B9AB0500055A19C /* AppDelegate.swift */; };
 		B3A301611B9AB0500055A19C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A301601B9AB0500055A19C /* ViewController.swift */; };
 		B3A301641B9AB0500055A19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A301621B9AB0500055A19C /* Main.storyboard */; };
@@ -29,13 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		434A8DB21B9AC0E800692569 /* Embed Frameworks */ = {
+		43CCD8971B9ACE3300090D13 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				434A8DB11B9AC0E800692569 /* DefaultsSDK.framework in Embed Frameworks */,
+				43CCD8961B9ACE3300090D13 /* DefaultsSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		434A8DAF1B9ABD6C00692569 /* DefaultsDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DefaultsDemo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		43DBEF831B9ABC1C00BC8C3D /* DefaultsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DefaultsSDK.framework; sourceTree = "<group>"; };
+		43CCD8931B9ACE2A00090D13 /* DefaultsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DefaultsSDK.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Defaults-cqmtookcaavoovcksnuugmotoyyg/Build/Products/Debug-iphoneos/DefaultsSDK.framework"; sourceTree = "<group>"; };
 		B3A301591B9AB0500055A19C /* DefaultsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A3015D1B9AB0500055A19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3A3015E1B9AB0500055A19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43DBEF841B9ABC1C00BC8C3D /* DefaultsSDK.framework in Frameworks */,
-				434A8DB01B9AC0E800692569 /* DefaultsSDK.framework in Frameworks */,
+				43CCD8941B9ACE2A00090D13 /* DefaultsSDK.framework in Frameworks */,
+				43CCD8951B9ACE3300090D13 /* DefaultsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +80,7 @@
 		B3A301501B9AB0500055A19C = {
 			isa = PBXGroup;
 			children = (
+				43CCD8931B9ACE2A00090D13 /* DefaultsSDK.framework */,
 				B3A3015B1B9AB0500055A19C /* DefaultsDemo */,
 				B3A301711B9AB0500055A19C /* DefaultsDemoTests */,
 				B3A3015A1B9AB0500055A19C /* Products */,
@@ -103,7 +104,6 @@
 				B3A301621B9AB0500055A19C /* Main.storyboard */,
 				B3A301651B9AB0500055A19C /* Images.xcassets */,
 				B3A301671B9AB0500055A19C /* LaunchScreen.xib */,
-				43DBEF831B9ABC1C00BC8C3D /* DefaultsSDK.framework */,
 				B3A3015C1B9AB0500055A19C /* Supporting Files */,
 			);
 			path = DefaultsDemo;
@@ -145,7 +145,7 @@
 				B3A301551B9AB0500055A19C /* Sources */,
 				B3A301561B9AB0500055A19C /* Frameworks */,
 				B3A301571B9AB0500055A19C /* Resources */,
-				434A8DB21B9AC0E800692569 /* Embed Frameworks */,
+				43CCD8971B9ACE3300090D13 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +185,7 @@
 				TargetAttributes = {
 					B3A301581B9AB0500055A19C = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = J33CQ6XHJS;
 					};
 					B3A3016D1B9AB0500055A19C = {
 						CreatedOnToolsVersion = 6.4;
@@ -364,14 +365,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DefaultsDemo",
+					/Users/bogdan/Code/Hackathons/PennApps,
+					"XII/Defaults/Defaults-SDK/build/Debug-iphoneos",
+					/Users/bogdan/Code/Hackathons/PennApps,
+					"XII/Defaults/Defaults-SDK/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Defaults-cqmtookcaavoovcksnuugmotoyyg/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DefaultsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DefaultsDemo-Bridging-Header.h";
 			};
 			name = Debug;
@@ -380,14 +389,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DefaultsDemo",
+					/Users/bogdan/Code/Hackathons/PennApps,
+					"XII/Defaults/Defaults-SDK/build/Debug-iphoneos",
+					/Users/bogdan/Code/Hackathons/PennApps,
+					"XII/Defaults/Defaults-SDK/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Defaults-cqmtookcaavoovcksnuugmotoyyg/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DefaultsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DefaultsDemo-Bridging-Header.h";
 			};
 			name = Release;
