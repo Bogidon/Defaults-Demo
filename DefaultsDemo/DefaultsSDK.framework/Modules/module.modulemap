@@ -1,0 +1,6 @@
+framework module DefaultsSDK {
+  umbrella header "DefaultsSDK.h"
+
+  export *
+  module * { export * }
+}

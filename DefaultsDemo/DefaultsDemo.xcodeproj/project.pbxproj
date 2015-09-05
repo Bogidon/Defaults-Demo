@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43CCD8991B9B3EE300090D13 /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CCD8981B9B3EE300090D13 /* DefaultsSDK.framework */; };
-		43CCD89E1B9B3F0400090D13 /* DefaultsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43CCD8981B9B3EE300090D13 /* DefaultsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B35591111B9B3561003A1305 /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35591101B9B3561003A1305 /* AppLogic.swift */; };
+		B37AE7731B9B5EC70075C4C8 /* DefaultsSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B37AE7721B9B5EC70075C4C8 /* DefaultsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B37AE7741B9B5ED00075C4C8 /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37AE7721B9B5EC70075C4C8 /* DefaultsSDK.framework */; };
 		B3A3015F1B9AB0500055A19C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A3015E1B9AB0500055A19C /* AppDelegate.swift */; };
 		B3A301611B9AB0500055A19C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A301601B9AB0500055A19C /* ViewController.swift */; };
 		B3A301641B9AB0500055A19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A301621B9AB0500055A19C /* Main.storyboard */; };
@@ -29,23 +29,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		43CCD89F1B9B3F0400090D13 /* Embed Frameworks */ = {
+		B37AE7711B9B5E950075C4C8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				43CCD89E1B9B3F0400090D13 /* DefaultsSDK.framework in Embed Frameworks */,
+				B37AE7731B9B5EC70075C4C8 /* DefaultsSDK.framework in CopyFiles */,
 			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		434A8DAF1B9ABD6C00692569 /* DefaultsDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DefaultsDemo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		43CCD8981B9B3EE300090D13 /* DefaultsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DefaultsSDK.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/Defaults-cqmtookcaavoovcksnuugmotoyyg/Build/Products/Debug-iphoneos/DefaultsSDK.framework"; sourceTree = "<group>"; };
 		B35591101B9B3561003A1305 /* AppLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLogic.swift; sourceTree = "<group>"; };
+		B37AE7721B9B5EC70075C4C8 /* DefaultsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DefaultsSDK.framework; sourceTree = "<group>"; };
 		B3A301591B9AB0500055A19C /* DefaultsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A3015D1B9AB0500055A19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3A3015E1B9AB0500055A19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43CCD8991B9B3EE300090D13 /* DefaultsSDK.framework in Frameworks */,
+				B37AE7741B9B5ED00075C4C8 /* DefaultsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +79,7 @@
 		B3A301501B9AB0500055A19C = {
 			isa = PBXGroup;
 			children = (
-				43CCD8981B9B3EE300090D13 /* DefaultsSDK.framework */,
+				B37AE7721B9B5EC70075C4C8 /* DefaultsSDK.framework */,
 				B3A3015B1B9AB0500055A19C /* DefaultsDemo */,
 				B3A301711B9AB0500055A19C /* DefaultsDemoTests */,
 				B3A3015A1B9AB0500055A19C /* Products */,
@@ -146,7 +145,7 @@
 				B3A301551B9AB0500055A19C /* Sources */,
 				B3A301561B9AB0500055A19C /* Frameworks */,
 				B3A301571B9AB0500055A19C /* Resources */,
-				43CCD89F1B9B3F0400090D13 /* Embed Frameworks */,
+				B37AE7711B9B5E950075C4C8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -374,6 +373,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DefaultsDemo",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Defaults-cqmtookcaavoovcksnuugmotoyyg/Build/Products/Debug-iphoneos",
+					"/Users/rohanmishra/Desktop/Defaults/Defaults-SDK/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DefaultsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -394,6 +395,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DefaultsDemo",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Defaults-cqmtookcaavoovcksnuugmotoyyg/Build/Products/Debug-iphoneos",
+					"/Users/rohanmishra/Desktop/Defaults/Defaults-SDK/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = DefaultsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
