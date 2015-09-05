@@ -21,12 +21,10 @@ class ViewController: UIViewController {
         
         appTitle.attributedText = attributedString
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func contactUs(sender: UIButton) {
+        DFOpen.mail("bogdan@chehacks.com")
     }
-
 
 }
 
