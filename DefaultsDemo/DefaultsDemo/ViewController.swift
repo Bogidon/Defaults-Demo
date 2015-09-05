@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DefaultsSDK
 
 class ViewController: UIViewController {
     

@@ -10,6 +10,8 @@
 	<string>DefaultsDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>97ADAE82DD2503D2EFD4A5C678563B40DAB76B16</key>
+		<string>github.com:Bogidon/Defaults.git</string>
 		<key>CD417D038DDE139EA72554A272ABC9CA1E931DBE</key>
 		<string>https://github.com/Bogidon/Defaults-Sample-App.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>DefaultsDemo/DefaultsDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>97ADAE82DD2503D2EFD4A5C678563B40DAB76B16</key>
+		<string>../../../..</string>
 		<key>CD417D038DDE139EA72554A272ABC9CA1E931DBE</key>
 		<string>../../..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>CD417D038DDE139EA72554A272ABC9CA1E931DBE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97ADAE82DD2503D2EFD4A5C678563B40DAB76B16</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
