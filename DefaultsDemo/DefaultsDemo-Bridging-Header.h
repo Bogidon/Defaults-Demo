@@ -7,4 +7,4 @@
 //
 
 
-#import <DefaultsSDK/DefaultsSDK.h>
+#import <DefaultsSDK/Defaults-SDK.h>
