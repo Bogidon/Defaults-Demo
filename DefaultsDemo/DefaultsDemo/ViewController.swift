@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 
     @IBAction func toWellsFargoStadium(sender: AnyObject)
     {
-        
+        DFOpen.navigateToAddress("5 Callison Lane, Voorhees NJ 08043")
     }
 }
 

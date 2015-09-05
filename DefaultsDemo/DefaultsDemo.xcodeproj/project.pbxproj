@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43E5DF091B9B6D1300EE168A /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E5DF081B9B6D1300EE168A /* DefaultsSDK.framework */; };
+		43E5DF0C1B9B6D4A00EE168A /* DefaultsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43E5DF081B9B6D1300EE168A /* DefaultsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B35591111B9B3561003A1305 /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35591101B9B3561003A1305 /* AppLogic.swift */; };
-		B37AE7731B9B5EC70075C4C8 /* DefaultsSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B37AE7721B9B5EC70075C4C8 /* DefaultsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B37AE7741B9B5ED00075C4C8 /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37AE7721B9B5EC70075C4C8 /* DefaultsSDK.framework */; };
 		B3A3015F1B9AB0500055A19C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A3015E1B9AB0500055A19C /* AppDelegate.swift */; };
 		B3A301611B9AB0500055A19C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A301601B9AB0500055A19C /* ViewController.swift */; };
 		B3A301641B9AB0500055A19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A301621B9AB0500055A19C /* Main.storyboard */; };
@@ -29,22 +29,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B37AE7711B9B5E950075C4C8 /* CopyFiles */ = {
+		43E5DF0B1B9B6D3700EE168A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B37AE7731B9B5EC70075C4C8 /* DefaultsSDK.framework in CopyFiles */,
+				43E5DF0C1B9B6D4A00EE168A /* DefaultsSDK.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		434A8DAF1B9ABD6C00692569 /* DefaultsDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DefaultsDemo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		43E5DF081B9B6D1300EE168A /* DefaultsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DefaultsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35591101B9B3561003A1305 /* AppLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLogic.swift; sourceTree = "<group>"; };
-		B37AE7721B9B5EC70075C4C8 /* DefaultsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DefaultsSDK.framework; sourceTree = "<group>"; };
 		B3A301591B9AB0500055A19C /* DefaultsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A3015D1B9AB0500055A19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3A3015E1B9AB0500055A19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37AE7741B9B5ED00075C4C8 /* DefaultsSDK.framework in Frameworks */,
+				43E5DF091B9B6D1300EE168A /* DefaultsSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,11 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43E5DF0A1B9B6D2900EE168A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E5DF081B9B6D1300EE168A /* DefaultsSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3A301501B9AB0500055A19C = {
 			isa = PBXGroup;
 			children = (
-				B37AE7721B9B5EC70075C4C8 /* DefaultsSDK.framework */,
 				B3A3015B1B9AB0500055A19C /* DefaultsDemo */,
+				43E5DF0A1B9B6D2900EE168A /* Frameworks */,
 				B3A301711B9AB0500055A19C /* DefaultsDemoTests */,
 				B3A3015A1B9AB0500055A19C /* Products */,
 			);
@@ -145,7 +154,7 @@
 				B3A301551B9AB0500055A19C /* Sources */,
 				B3A301561B9AB0500055A19C /* Frameworks */,
 				B3A301571B9AB0500055A19C /* Resources */,
-				B37AE7711B9B5E950075C4C8 /* CopyFiles */,
+				43E5DF0B1B9B6D3700EE168A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
