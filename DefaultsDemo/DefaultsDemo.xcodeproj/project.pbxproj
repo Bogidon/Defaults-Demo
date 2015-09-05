@@ -10,6 +10,7 @@
 		434A8DB01B9AC0E800692569 /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DBEF831B9ABC1C00BC8C3D /* DefaultsSDK.framework */; };
 		434A8DB11B9AC0E800692569 /* DefaultsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43DBEF831B9ABC1C00BC8C3D /* DefaultsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43DBEF841B9ABC1C00BC8C3D /* DefaultsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DBEF831B9ABC1C00BC8C3D /* DefaultsSDK.framework */; };
+		B35591111B9B3561003A1305 /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35591101B9B3561003A1305 /* AppLogic.swift */; };
 		B3A3015F1B9AB0500055A19C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A3015E1B9AB0500055A19C /* AppDelegate.swift */; };
 		B3A301611B9AB0500055A19C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A301601B9AB0500055A19C /* ViewController.swift */; };
 		B3A301641B9AB0500055A19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A301621B9AB0500055A19C /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		434A8DAF1B9ABD6C00692569 /* DefaultsDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DefaultsDemo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		43DBEF831B9ABC1C00BC8C3D /* DefaultsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DefaultsSDK.framework; sourceTree = "<group>"; };
+		B35591101B9B3561003A1305 /* AppLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLogic.swift; sourceTree = "<group>"; };
 		B3A301591B9AB0500055A19C /* DefaultsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A3015D1B9AB0500055A19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3A3015E1B9AB0500055A19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		B3A3015B1B9AB0500055A19C /* DefaultsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B35591101B9B3561003A1305 /* AppLogic.swift */,
 				B3A3015E1B9AB0500055A19C /* AppDelegate.swift */,
 				B3A301601B9AB0500055A19C /* ViewController.swift */,
 				B3A301621B9AB0500055A19C /* Main.storyboard */,
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35591111B9B3561003A1305 /* AppLogic.swift in Sources */,
 				B3A301611B9AB0500055A19C /* ViewController.swift in Sources */,
 				B3A3015F1B9AB0500055A19C /* AppDelegate.swift in Sources */,
 			);

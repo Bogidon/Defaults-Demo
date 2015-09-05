@@ -11,18 +11,21 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var appTitle: UILabel!
+    @IBOutlet weak var visitSiteButton: UIButton!
+    @IBOutlet weak var builtAtPennAppsButton: UIButton!
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        let attributedString = NSMutableAttributedString(string: "DEFAULTS")
-        attributedString.addAttribute(NSKernAttributeName, value: CGFloat(1.4), range: NSRange(location: 0, length: 8))
-        
-        appTitle.attributedText = attributedString
+        // Kerning via extension
+        appTitle.kern(14)
+        visitSiteButton.kern(2)
+        builtAtPennAppsButton.kern(2)
     }
     
-    @IBAction func contactUs(sender: UIButton) {
+    @IBAction func contactUs(sender: UIButton)
+    {
         DFOpen.mail("bogdan@chehacks.com")
     }
 
