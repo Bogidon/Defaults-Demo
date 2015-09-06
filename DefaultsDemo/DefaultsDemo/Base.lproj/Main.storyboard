@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -31,20 +32,23 @@
                                     <action selector="contactUs:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="go0-pZ-UW5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwD-j9-zeX">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwD-j9-zeX">
                                 <rect key="frame" x="179" y="492" width="125" height="32"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <state key="normal" title="or visit our site">
+                                <state key="normal" title="PennApps site">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openSite:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ExZ-oz-cTk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noj-hS-Ref">
                                 <rect key="frame" x="16" y="532" width="288" height="32"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <state key="normal" title="Built at PennApps XII in Philadelphia">
+                                <state key="normal" title="Built at PennApps XII in Philly">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -59,19 +63,30 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PennApps" translatesAutoresizingMaskIntoConstraints="NO" id="qw3-O9-GdT">
+                                <rect key="frame" x="40" y="182" width="240" height="204"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qw3-O9-GdT" secondAttribute="height" multiplier="432:367" id="hxh-hw-3a1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.031372549020000001" green="0.1647058824" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="qw3-O9-GdT" secondAttribute="centerX" id="9k9-2j-NAa"/>
                             <constraint firstItem="dju-RA-IZM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="IuF-bX-1FF"/>
                             <constraint firstItem="noj-hS-Ref" firstAttribute="top" secondItem="vwD-j9-zeX" secondAttribute="bottom" constant="8" id="MxY-tn-dHJ"/>
                             <constraint firstItem="vwD-j9-zeX" firstAttribute="leading" secondItem="dYd-ob-uHj" secondAttribute="trailing" constant="8" id="U1Q-5d-5K7"/>
+                            <constraint firstAttribute="centerY" secondItem="qw3-O9-GdT" secondAttribute="centerY" id="Yxn-za-i2O"/>
                             <constraint firstItem="noj-hS-Ref" firstAttribute="top" secondItem="dYd-ob-uHj" secondAttribute="bottom" constant="3" id="i1x-i4-SLd"/>
                             <constraint firstAttribute="trailing" secondItem="dju-RA-IZM" secondAttribute="trailing" constant="16" id="jtb-Zk-lhP"/>
                             <constraint firstItem="y78-LH-zJo" firstAttribute="top" secondItem="noj-hS-Ref" secondAttribute="bottom" constant="4" id="lUa-rA-EOs"/>
+                            <constraint firstItem="qw3-O9-GdT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="lzM-GX-Lc8"/>
                             <constraint firstItem="dju-RA-IZM" firstAttribute="top" secondItem="htD-5O-J15" secondAttribute="bottom" constant="2" id="mpT-QL-LRt"/>
                             <constraint firstItem="noj-hS-Ref" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="osi-jQ-d0L"/>
                             <constraint firstItem="vwD-j9-zeX" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="pcH-SW-Pef"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qw3-O9-GdT" secondAttribute="trailing" constant="24" id="qQj-z1-1C9"/>
                             <constraint firstAttribute="trailing" secondItem="noj-hS-Ref" secondAttribute="trailing" constant="16" id="rf2-Rf-dId"/>
                             <constraint firstItem="dYd-ob-uHj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="z5S-hs-mcv"/>
                         </constraints>
@@ -88,6 +103,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="PennApps" width="432" height="367"/>
         <image name="contactUs" width="390" height="135"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -30,12 +30,17 @@ class ViewController: UIViewController {
         let rangeOfSiteButton = (visitSiteText! as NSString).rangeOfString(ourSite)
         let attributedString = NSMutableAttributedString(string: visitSiteText!, attributes: [NSFontAttributeName : UIFont.systemFontOfSize(14)])
         
-        attributedString.setAttributes([NSFontAttributeName : UIFont.systemFontOfSize(20), NSForegroundColorAttributeName : UIColor(rgba: "#50E3C2").CGColor], range: rangeOfSiteButton)
+        attributedString.setAttributes([NSFontAttributeName : UIFont.systemFontOfSize(20),NSForegroundColorAttributeName : UIColor(rgba: "#50E3C2").CGColor], range: rangeOfSiteButton)
         // visitSiteButton.titleLabel?.attributedText = attributedString
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
     @IBAction func contactUs(sender: UIButton)
     {
+        
         DFOpen.mail("bogdan@chehacks.com")
     }
 
@@ -43,5 +48,10 @@ class ViewController: UIViewController {
     {
         DFOpen.navigateToAddress("5 Callison Lane, Voorhees NJ 08043")
     }
+    
+    @IBAction func openSite(sender: AnyObject) {
+        DFOpen.browser("http://2015f.pennapps.com")
+    }
+    
 }
 
